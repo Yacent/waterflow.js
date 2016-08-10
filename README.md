@@ -9,7 +9,7 @@ judge the height of each column, append the new domElement into the column of th
 ####import
 ```javascript
 <script type="text/javascript" src="waterflow.js"></script>
-<script type="text/javascript" src="**.js"></script>
+<script type="text/javascript" src="test.js"></script>
 ```
 
 ####HTML Structure
@@ -18,7 +18,7 @@ judge the height of each column, append the new domElement into the column of th
 * {margin: 0;border: 0;padding: 0;}
 .waterflow {position: relative;}
 .flow {background: rgba(0,0,0,.8);position: absolute;border: 1px solid #ccc;}
-.flow .flowItem {width: 100%;font-size: 30pt;color: #fff;text-align: center;}
+.flow .flowItem {width: 100%;font-size: 60px;color: #fff;text-align: center;}
 /* ========= css end ========= */
 
 <div class="waterflow" id="waterflow">
@@ -53,6 +53,7 @@ judge the height of each column, append the new domElement into the column of th
 			verticalMargin: number | define the margin of each item in vertical
 
 ```javascript
+// test.js
 var waterFlow = document.getElementById('waterflow'),
 	flowItems = waterFlow.getElementsByClassName('flow'),
 	option = {
@@ -63,7 +64,6 @@ var waterFlow = document.getElementById('waterflow'),
 		horizontalMargin: 15,
 		verticalMargin: 15
 	};
-
 water(option);
 ```
 
