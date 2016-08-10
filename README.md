@@ -16,8 +16,8 @@ judge the height of each column, append the new domElement into the column of th
 ```javascript
 /* ========= css start ========= */
 * {margin: 0;border: 0;padding: 0;}
-.waterflow {position: relative;}
-.flow {background: rgba(0,0,0,.8);position: absolute;border: 1px solid #ccc;}
+.waterflow {position: relative;}  // don't forget relative
+.flow {background: rgba(0,0,0,.8);position: absolute;border: 1px solid #ccc;}  // don't forget absolute
 .flow .flowItem {width: 100%;font-size: 60px;color: #fff;text-align: center;}
 /* ========= css end ========= */
 
