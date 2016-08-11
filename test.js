@@ -10,4 +10,4 @@ var option = {
 	verticalMargin: 15
 };
 
-water(option);
+waterflow.fire(option);
