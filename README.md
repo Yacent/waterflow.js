@@ -1,4 +1,4 @@
-##Waterflow v0.0.1
+##Waterflow v0.0.3
 a plugin that can achieve the layout of the waterflow
 
 ###Principle
