@@ -1,6 +1,9 @@
 ##Waterflow v0.0.3
 a plugin that can achieve the layout of the waterflow
 
+###DEMO
+The DEMO of waterflow. [click me](https://yacent.github.io/waterflow.js/waterflow)
+
 ###Principle
 judge the height of each column, append the new domElement into the column of the most shortest column
 
@@ -9,7 +12,7 @@ judge the height of each column, append the new domElement into the column of th
 ####import
 ```javascript
 <script type="text/javascript" src="waterflow.js"></script>
-<script type="text/javascript" src="**.js"></script>
+<script type="text/javascript" src="test.js"></script>
 ```
 
 ####HTML Structure
