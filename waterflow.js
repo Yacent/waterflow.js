@@ -12,11 +12,11 @@
  * @param  {[Object]} _option [the configuration of waterflow]
  *                    eg: 	_option = {
  *                    	  		parent: waterFlow, 		[DOMElement]
- *								flowItems: flowItems, 	[DOMELement]
- *								column: 3,				[Number]
- *								width: 360,				[Number]
- *								horizontalMargin: 15,	[Number]
- *								verticalMargin: 15		[Number]
+ *					flowItems: flowItems, 		[DOMELement]
+ *					column: 3,			[Number]
+ *					width: 360,			[Number]
+ *					horizontalMargin: 15,		[Number]
+ *					verticalMargin: 15		[Number]
  *                     	  	}
  * @return {[undefined]}
  */
