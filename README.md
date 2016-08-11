@@ -1,4 +1,4 @@
-##Waterflow v0.0.2
+##Waterflow v0.0.1
 a plugin that can achieve the layout of the waterflow
 
 ###Principle
@@ -9,7 +9,7 @@ judge the height of each column, append the new domElement into the column of th
 ####import
 ```javascript
 <script type="text/javascript" src="waterflow.js"></script>
-<script type="text/javascript" src="test.js"></script>
+<script type="text/javascript" src="**.js"></script>
 ```
 
 ####HTML Structure
@@ -71,4 +71,4 @@ water(option);
 MIT
 
 ####Hey
-~~Achieve compatibility for IE, backwards compatibility in the future.~~
+~~Achieve compatibility for IE, backwards compatibility and Responsive in the future.~~
