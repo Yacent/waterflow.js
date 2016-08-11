@@ -64,7 +64,7 @@ var waterFlow = document.getElementById('waterflow'),
 		verticalMargin: 15
 	};
 
-water(option);
+waterflow.fire(option);
 ```
 
 ####License
