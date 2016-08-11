@@ -1,6 +1,8 @@
 ##Waterflow v0.0.3
 a plugin that can achieve the layout of the waterflow
 
+characteristic: **compatibility for IE** and **Responsive**.
+
 ###DEMO
 The DEMO of waterflow. [click me](https://yacent.github.io/waterflow.js/waterflow)
 
