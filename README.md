@@ -1,8 +1,5 @@
-##Waterflow v0.0.1
+##Waterflow v0.0.2
 a plugin that can achieve the layout of the waterflow
-
-###Demo
-The Demo Link: [Click me](https://yacent.github.io/waterflow.js/waterflow.html)
 
 ###Principle
 judge the height of each column, append the new domElement into the column of the most shortest column
@@ -12,16 +9,16 @@ judge the height of each column, append the new domElement into the column of th
 ####import
 ```javascript
 <script type="text/javascript" src="waterflow.js"></script>
-<script type="text/javascript" src="test.js"></script>
+<script type="text/javascript" src="**.js"></script>
 ```
 
 ####HTML Structure
 ```javascript
 /* ========= css start ========= */
 * {margin: 0;border: 0;padding: 0;}
-.waterflow {position: relative;}  // don't forget relative
-.flow {background: rgba(0,0,0,.8);position: absolute;border: 1px solid #ccc;}  // don't forget absolute
-.flow .flowItem {width: 100%;font-size: 60px;color: #fff;text-align: center;}
+.waterflow {position: relative;}
+.flow {background: rgba(0,0,0,.8);position: absolute;border: 1px solid #ccc;}
+.flow .flowItem {width: 100%;font-size: 30pt;color: #fff;text-align: center;}
 /* ========= css end ========= */
 
 <div class="waterflow" id="waterflow">
@@ -56,7 +53,6 @@ judge the height of each column, append the new domElement into the column of th
 			verticalMargin: number | define the margin of each item in vertical
 
 ```javascript
-// test.js
 var waterFlow = document.getElementById('waterflow'),
 	flowItems = waterFlow.getElementsByClassName('flow'),
 	option = {
@@ -67,6 +63,7 @@ var waterFlow = document.getElementById('waterflow'),
 		horizontalMargin: 15,
 		verticalMargin: 15
 	};
+
 water(option);
 ```
 
@@ -74,4 +71,4 @@ water(option);
 MIT
 
 ####Hey
-Achieve compatibility for IE, backwards compatibility and Responsive in the future.
+~~Achieve compatibility for IE, backwards compatibility in the future.~~
