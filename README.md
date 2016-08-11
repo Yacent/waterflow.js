@@ -18,7 +18,7 @@ judge the height of each column, append the new domElement into the column of th
 * {margin: 0;border: 0;padding: 0;}
 .waterflow {position: relative;}
 .flow {background: rgba(0,0,0,.8);position: absolute;border: 1px solid #ccc;}
-.flow .flowItem {width: 100%;font-size: 30pt;color: #fff;text-align: center;}
+.flow .flowItem {width: 100%;font-size: 50px;color: #fff;text-align: center;}
 /* ========= css end ========= */
 
 <div class="waterflow" id="waterflow">
