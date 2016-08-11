@@ -9,7 +9,7 @@ judge the height of each column, append the new domElement into the column of th
 ####import
 ```javascript
 <script type="text/javascript" src="waterflow.js"></script>
-<script type="text/javascript" src="**.js"></script>
+<script type="text/javascript" src="test.js"></script>
 ```
 
 ####HTML Structure
