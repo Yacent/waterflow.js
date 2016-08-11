@@ -12,11 +12,11 @@
  * @param  {[Object]} _option [the configuration of waterflow]
  *                    eg: 	_option = {
  *                    	  		parent: waterFlow, 		[DOMElement]
- *								flowItems: flowItems, 	[DOMELement]
- *								column: 3,				[Number]
- *								width: 360,				[Number]
- *								horizontalMargin: 15,	[Number]
- *								verticalMargin: 15		[Number]
+ *					flowItems: flowItems, 		[DOMELement]
+ *					column: 3,			[Number]
+ *					width: 360,			[Number]
+ *					horizontalMargin: 15,		[Number]
+ *					verticalMargin: 15		[Number]
  *                     	  	}
  * @return {[undefined]}
  */
@@ -40,7 +40,7 @@ function water(_option) {
 		}
 
 		// since the the init2 has configure the height of the first
-		// but u also can init from here
+		// but u also can init the array from here
 		if (j < _option.column) {
 			flowItems[j].style.top = 0;
 			flowItems[j].style.left = (j % _option.column) * (_option.width + _option.horizontalMargin) + 'px';
@@ -52,6 +52,29 @@ function water(_option) {
 			flowItems[j].style.top = minH + _option.verticalMargin + 'px';
 
 			col[minIndex] += flowItems[j].scrollHeight + _option.verticalMargin;
+		}
+	}
+
+	// for IE 6-8 without the function [indexOf] in the Array
+	if (!Array.prototype.indexOf) {
+		Array.prototype.indexOf = function(item) {
+			var len = this.length;
+
+			if (len <= 0) {
+				return -1;
+			}
+
+			// since indexOf can search from the specific position
+			var start = Number(arguments[1]) > 0 ? Number(arguments[1]) : 0 || 0;
+
+			// loop the array and matching the item
+			// i in this -> whether the i(index) in arr or overflow
+			for (var i = start; i < len; i++) {
+				if (i in this && this[i] == item) {
+					return i;
+				}
+			}
+			return -1;
 		}
 	}
 }
